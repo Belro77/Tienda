@@ -1,0 +1,52 @@
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background-color: #fff;
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #d32f2f;
+}
+
+nav a.active {
+  color: #d32f2f;
+}
+
+nav a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #d32f2f;
+}
+
+
+
+.brand-header {
+  text-align: center;
+  padding: 2rem 0 1rem;
+  background-color: #fff;
+}
+
+.brand-title {
+  font-size: 2.5rem;
+  font-family: 'Playfair Display', serif;
+  color: #d32f2f;
+  margin: 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
